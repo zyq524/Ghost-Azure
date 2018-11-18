@@ -1,4 +1,9 @@
 {
+	"url": "https://www.sitecoreessentials.com",
+	"server": {
+		"host": "127.0.0.1",
+		"port": process.env.PORT	
+    },
     "database": {
         "client": "sqlite3",
         "connection": {
@@ -9,9 +14,15 @@
     "paths": {
         "contentPath": "content/"
     },
+    "privacy": {
+        "useRpcPing": false,
+        "useUpdateCheck": true
+    },
+    "useMinFiles": false,
     "caching": {
 		"frontend": {
 			"maxAge": 600
 		}
 	}
+	"forceAdminSSL": true
 }
